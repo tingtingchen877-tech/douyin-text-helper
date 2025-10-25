@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 用 ngrok 隧道调用本地 8000 抖音解析 API
-    const response = await fetch('https://avery-unseared-lilith.ngrok-free.dev', {
+    const response = await fetch('https://avery-unseared-lilith.ngrok-free.dev/api/parse', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ share_text }),
